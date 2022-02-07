@@ -1,0 +1,12 @@
+.input {
+    composes: input from '../Field/field.module.css';
+}
+
+.input_error {
+    composes: input from '../Field/field.module.css';
+    border-color: rgb(var(--venia-global-color-red-400));
+}
+
+.input_shimmer {
+    composes: input_base from '../Field/field.module.css';
+}

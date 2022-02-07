@@ -1,0 +1,18 @@
+.root {
+    composes: root from '../Icon/icon.module.css';
+    --stroke: rgb(var(--venia-global-color-text-hint));
+}
+
+.icon {
+    composes: icon from '../Icon/icon.module.css';
+    animation: spin 1920ms linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
